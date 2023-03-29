@@ -10,3 +10,45 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Header */
+header {
+  background-color: #ffcc01;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px 50px;
+  gap: 20px;
+}
+
+header .logo img {
+  width: 300px;
+}
+
+header form {
+  width: 100%;
+}
+
+header .search {
+  width: 60%;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  padding: 15px 20px;
+  font-size: 17px;
+  caret-color: #ffcc01;
+}
+
+@media (max-width: 750px) {
+  header .logo img {
+    width: 200px;
+  }
+
+  header .search {
+    width: 100%;
+  }
+}
+
+header .search:focus {
+  outline: none;
+}
