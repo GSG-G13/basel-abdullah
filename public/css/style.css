@@ -9,6 +9,7 @@
 /* Main Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0375BC;
 }
 
 /* Header */
@@ -38,7 +39,9 @@ header .search {
   font-size: 17px;
   caret-color: #ffcc01;
 }
-
+header .search::placeholder{
+  color: #0375BC;
+}
 @media (max-width: 750px) {
   header .logo img {
     width: 200px;
@@ -51,4 +54,45 @@ header .search {
 
 header .search:focus {
   outline: none;
+}
+
+
+/* Main */
+
+main{
+  padding: 50px;
+  margin:  0 auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card{
+  background-color: #ffcc01;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #f2f2f2;
+}
+
+.card img{
+  width: 150px;
+  margin: 30px auto;
+}
+.card .info{
+ padding: 0 30px 15px ;
+}
+
+
+.pop{
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 240px;
+    z-index: -1;
 }
