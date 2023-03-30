@@ -1,10 +1,11 @@
 const express = require('express');
+
+const getPokemon = require('./getPokemon');
 const { clientError, serverError } = require('./error');
-const { getPokemonById } = require('./fetchData');
 
 const router = express.Router();
 
-router.use('/search/:name', getPokemonById);
+router.get('/search/:pokName', getPokemon);
 
 router.use(clientError);
 router.use(serverError);
