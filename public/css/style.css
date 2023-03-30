@@ -39,9 +39,11 @@ header .search {
   font-size: 17px;
   caret-color: #ffcc01;
 }
-header .search::placeholder{
+
+header .search::placeholder {
   color: #0375BC;
 }
+
 @media (max-width: 750px) {
   header .logo img {
     width: 200px;
@@ -59,9 +61,9 @@ header .search:focus {
 
 /* Main */
 
-main{
+main {
   padding: 50px;
-  margin:  0 auto;
+  margin: 0 auto;
 }
 
 .cards {
@@ -71,7 +73,7 @@ main{
   gap: 20px;
 }
 
-.card{
+.card {
   background-color: #ffcc01;
   border-radius: 10px;
   display: flex;
@@ -80,19 +82,24 @@ main{
   background-color: #f2f2f2;
 }
 
-.card img{
+.card img {
   width: 150px;
   margin: 30px auto;
 }
-.card .info{
- padding: 0 30px 15px ;
+
+.card .info {
+  padding: 0 30px 15px;
 }
 
-
-.pop{
+.pop {
   position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 240px;
-    z-index: -1;
+  bottom: 0;
+  right: 0;
+  width: 240px;
+  z-index: -1;
+}
+
+/* 404 Page */
+.container {
+  
 }
