@@ -5,7 +5,7 @@ const { clientError, serverError } = require('./error');
 
 const router = express.Router();
 
-router.get('/search/', getPokemon);
+router.get('/search/:pokName', getPokemon);
 
 router.use(clientError);
 router.use(serverError);
